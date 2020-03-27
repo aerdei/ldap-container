@@ -1,0 +1,11 @@
+dn: olcDatabase={2}mdb,cn=config
+changetype: modify
+replace: olcSuffix
+olcSuffix: dc=example, dc=com
+-
+replace: olcRootDN
+olcRootDN: cn=ldapadmin,dc=example,dc=com
+-
+replace: olcRootPW
+olcRootPW: {SSHA}ULM2cEOsPpyEdciKT8S4uu4eGn8yr3lZ
+-

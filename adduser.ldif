@@ -1,0 +1,17 @@
+dn: cn=Barbara Jensen,ou=people,dc=example,dc=com
+objectClass: person
+cn: Barbara Jensen
+cn: Babs Jensen
+sn: Jensen
+
+dn: cn=Bjorn Jensen,ou=people,dc=example,dc=com
+objectClass: person
+cn: Bjorn Jensen
+cn: Bjorn
+sn: Jensen
+
+dn: cn=Jennifer Jensen,ou=people,dc=example,dc=com
+objectClass: person
+cn: Jennifer Jensen
+cn: Jennifer
+sn: Jensen

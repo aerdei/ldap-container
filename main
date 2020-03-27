@@ -1,0 +1,16 @@
+#!/bin/bash
+LDAP_DEBUG=${DEBUG:-32768}
+# turn on bash's job control
+set -m
+ulimit -n 1024
+
+# Start the primary process and put it in the background
+slapd -u ldap -g ldap -h "ldapi:// ldap://" -d $LDAP_DEBUG &
+
+# Start the helper process
+sleep 3
+./helper
+
+# now we bring the primary process back into the foreground
+# and leave it there
+fg %1
