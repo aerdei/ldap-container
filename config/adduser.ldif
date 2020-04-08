@@ -1,17 +1,26 @@
-dn: cn=Barbara Jensen,ou=people,dc=example,dc=com
+dn: userid=barbarajensen,ou=people,dc=example,dc=com
 objectClass: person
+objectClass: pilotPerson
 cn: Barbara Jensen
-cn: Babs Jensen
+userid: barbarajensen
+mail: barbarajensen@example.com
 sn: Jensen
+userPassword: {SSHA}IXIHk/dPDZIOYaNfVzxiMBtmmwkmj0RL
 
-dn: cn=Bjorn Jensen,ou=people,dc=example,dc=com
+dn: userid=bjornjensen,ou=people,dc=example,dc=com
 objectClass: person
+objectClass: pilotPerson
 cn: Bjorn Jensen
-cn: Bjorn
+userid: bjornjensen
+mail: bjornjensen@example.com
 sn: Jensen
+userPassword: {SSHA}IXIHk/dPDZIOYaNfVzxiMBtmmwkmj0RL
 
-dn: cn=Jennifer Jensen,ou=people,dc=example,dc=com
+dn: userid=jenniferjensen,ou=people,dc=example,dc=com
 objectClass: person
+objectClass: pilotPerson
 cn: Jennifer Jensen
-cn: Jennifer
+userid: jenniferjensen
+mail: jenniferjensen@example.com
 sn: Jensen
+userPassword: {SSHA}IXIHk/dPDZIOYaNfVzxiMBtmmwkmj0RL
