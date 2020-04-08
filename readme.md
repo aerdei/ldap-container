@@ -6,5 +6,5 @@ An LDAP container for dev and test purposes.
 ```
 ## Run
 ```bash
-# podman run -p 389:389 -e DEBUG=1 ldap-container:v0.0.1
+# podman run -p 389:389 -e DEBUG=1 -v ./config:/tmp/config:Z ldap-container:v0.0.1
 ```

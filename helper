@@ -2,6 +2,6 @@
 
 SCHEMAS=/etc/openldap/schema 
 for schema in $SCHEMAS/cosine.ldif $SCHEMAS/nis.ldif $SCHEMAS/inetorgperson.ldif; do ldapadd -Y EXTERNAL -H ldapi:/// -f $schema; done
-ldapmodify -H ldapi:/// -f ./mod.ldif
-ldapadd -H ldapi:/// -D 'cn=ldapadmin,dc=example,dc=com' -w ldap -f ./basedn.ldif
-ldapadd -H ldapi:/// -D 'cn=ldapadmin,dc=example,dc=com' -w ldap -f ./adduser.ldif
+ldapmodify -H ldapi:/// -f /tmp/config/mod.ldif
+ldapadd -H ldapi:/// -D 'cn=ldapadmin,dc=example,dc=com' -w ldap -f /tmp/config/basedn.ldif
+ldapadd -H ldapi:/// -D 'cn=ldapadmin,dc=example,dc=com' -w ldap -f /tmp/config/adduser.ldif
